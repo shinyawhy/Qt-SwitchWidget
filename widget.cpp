@@ -9,6 +9,7 @@ Widget::Widget(QWidget *parent)
     connect(&timer, &QTimer::timeout, this, &Widget::onTimer);
     timer.setInterval(40);
     // do something
+    // do something
     QTimer::singleShot(100, [this]{
         QRect rect = this->rect();
         QRect outRoundRect = rect.adjusted(3, 3, -3, -3);
