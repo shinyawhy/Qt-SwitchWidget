@@ -8,7 +8,7 @@ Widget::Widget(QWidget *parent)
     setAttribute(Qt::WA_TranslucentBackground,true);
     connect(&timer, &QTimer::timeout, this, &Widget::onTimer);
     timer.setInterval(40);
-
+    // do something
     QTimer::singleShot(100, [this]{
         QRect rect = this->rect();
         QRect outRoundRect = rect.adjusted(3, 3, -3, -3);
